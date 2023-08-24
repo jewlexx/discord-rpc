@@ -333,7 +333,7 @@ def libs(clean, static, shared, skip_formatter, just_release):
 
     if PLATFORM == "win":
         generator32 = "Visual Studio 17 2022"
-        generator64 = "Visual Studio 17 2022 Win64"
+        generator64 = "Visual Studio 17 2022"
         if static:
             build_lib("win32-static", generator32, static_options, just_release)
             build_lib("win64-static", generator64, static_options, just_release)
